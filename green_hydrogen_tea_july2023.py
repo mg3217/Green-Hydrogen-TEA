@@ -1361,7 +1361,7 @@ Mix = [0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0]
 
 final_results = pd.DataFrame(columns = ['Scaling Factor', 'Gen Mix','LCOH', 'Total Hydrogen', 'Excess Power %','Excess'])
 
-iv_max_list = pd.read_csv('electrolyzer_iv_max.csv')
+iv_max_list = pd.read_csv('electrolyzer_iv_max_alkaline.csv')
 i_e_max_ = list(iv_max_list["i_e_max"])
 v_e_max_ = list(iv_max_list["v_e_max"])
 
@@ -1680,7 +1680,7 @@ import pandas as pd
 # A_e = 2650368.67  #pem baseline
 A_e = 6020107.10  #alkaline baseline
 
-iv_max_list = pd.read_csv('electrolyzer_iv_max.csv')
+iv_max_list = pd.read_csv('electrolyzer_iv_max_alkaline.csv')
 i_e_max_ = list(iv_max_list["i_e_max"])
 v_e_max_ = list(iv_max_list["v_e_max"])
 
@@ -1733,7 +1733,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 A_e = 6020107.10  # baseline
-iv_max_list = pd.read_csv('electrolyzer_iv_max.csv')
+iv_max_list = pd.read_csv('electrolyzer_iv_max_alkaline.csv')
 i_e_max_ = list(iv_max_list["i_e_max"])
 v_e_max_ = list(iv_max_list["v_e_max"])
 
@@ -1781,7 +1781,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 A_e = 6020107.10  # baseline
-iv_max_list = pd.read_csv('electrolyzer_iv_max.csv')
+iv_max_list = pd.read_csv('electrolyzer_iv_max_alkaline.csv')
 i_e_max_ = list(iv_max_list["i_e_max"])
 v_e_max_ = list(iv_max_list["v_e_max"])
 
